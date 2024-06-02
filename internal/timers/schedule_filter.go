@@ -11,7 +11,7 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/etf1/kafka-message-scheduler/schedule"
+	"github.com/MingyangXiaTim/kafka-scheduler/schedule"
 )
 
 // tells if a schedule should be deleted

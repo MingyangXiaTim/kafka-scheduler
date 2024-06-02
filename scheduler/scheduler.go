@@ -6,10 +6,10 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/etf1/kafka-message-scheduler/instrument"
-	"github.com/etf1/kafka-message-scheduler/internal/timers"
-	"github.com/etf1/kafka-message-scheduler/schedule"
-	"github.com/etf1/kafka-message-scheduler/store"
+	"github.com/MingyangXiaTim/kafka-scheduler/instrument"
+	"github.com/MingyangXiaTim/kafka-scheduler/internal/timers"
+	"github.com/MingyangXiaTim/kafka-scheduler/schedule"
+	"github.com/MingyangXiaTim/kafka-scheduler/store"
 )
 
 const (
@@ -178,7 +178,7 @@ func (sch Scheduler) processStoreEvent(since time.Time, e store.Event, coldEvent
 }
 
 func (sch Scheduler) processTimerEvent(s schedule.Schedule) {
-	// if liveness detected inform the dedicated channel only
+	// if liveliness detected inform the dedicated channel only
 	if isIsAliveSchedule(s) {
 		sch.livenessChan <- s
 		return

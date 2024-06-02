@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"time"
 
+	"github.com/MingyangXiaTim/kafka-scheduler/schedule"
 	confluent "github.com/confluentinc/confluent-kafka-go/v2/kafka"
-	"github.com/etf1/kafka-message-scheduler/schedule"
 )
 
 const (

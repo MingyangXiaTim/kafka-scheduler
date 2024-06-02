@@ -7,12 +7,12 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	runner "github.com/etf1/kafka-message-scheduler/runner/kafka"
+	runner "github.com/MingyangXiaTim/kafka-scheduler/runner/kafka"
 )
 
 var (
 	version = "undefined"
-	app     = "kafka-message-scheduler"
+	app     = "kafka-scheduler"
 )
 
 func main() {

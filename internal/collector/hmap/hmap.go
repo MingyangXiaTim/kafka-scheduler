@@ -3,7 +3,7 @@ package hmap
 import (
 	"sync"
 
-	"github.com/etf1/kafka-message-scheduler/instrument"
+	"github.com/MingyangXiaTim/kafka-scheduler/instrument"
 )
 
 // Hmap is simple, implementation of the instrument.Collector interface

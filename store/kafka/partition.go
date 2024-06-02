@@ -5,9 +5,9 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
+	"github.com/MingyangXiaTim/kafka-scheduler/schedule"
+	kafka_schedule "github.com/MingyangXiaTim/kafka-scheduler/schedule/kafka"
 	"github.com/confluentinc/confluent-kafka-go/v2/kafka"
-	"github.com/etf1/kafka-message-scheduler/schedule"
-	kafka_schedule "github.com/etf1/kafka-message-scheduler/schedule/kafka"
 )
 
 // How kafka partition assignment works in the confluent go client

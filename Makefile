@@ -49,7 +49,7 @@ tests.docker:
 	docker-compose -p testsenv down -v; exit $$ret;
 
 docker:
-	docker build -t etf1/kafka-message-scheduler:${VERSION} -f ./cmd/kafka/Dockerfile .
+	docker build -t MingyangXiaTim/kafka-scheduler:${VERSION} -f ./cmd/kafka/Dockerfile .
 
 docker.mini:
-	docker build -t etf1/kafka-message-scheduler:mini-${VERSION} -f ./cmd/mini/Dockerfile .
+	docker build -t MingyangXiaTim/kafka-scheduler:mini-${VERSION} -f ./cmd/mini/Dockerfile .

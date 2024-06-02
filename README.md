@@ -1,4 +1,4 @@
-[![Go Reference](https://pkg.go.dev/badge/github.com/etf1/kafka-message-scheduler.svg)](https://pkg.go.dev/github.com/etf1/kafka-message-scheduler) [![Go Report Card](https://goreportcard.com/badge/github.com/etf1/kafka-message-scheduler)](https://goreportcard.com/report/github.com/etf1/kafka-message-scheduler)
+[![Go Reference](https://pkg.go.dev/badge/github.com/MingyangXiaTim/kafka-scheduler.svg)](https://pkg.go.dev/github.com/MingyangXiaTim/kafka-scheduler) [![Go Report Card](https://goreportcard.com/badge/github.com/MingyangXiaTim/kafka-scheduler)](https://goreportcard.com/report/github.com/MingyangXiaTim/kafka-scheduler)
 
 
 # Kafka message scheduler
@@ -168,14 +168,14 @@ BOOTSTRAP_SERVERS="kafka:9092" go run ./cmd/kafka
 * docker run :
 
 ```ruby
-docker run -e BOOTSTRAP_SERVERS="kafka:9092" etf1/kafka-message-scheduler
+docker run -e BOOTSTRAP_SERVERS="kafka:9092" MingyangXiaTim/kafka-scheduler
 ```
 
 * as code in your go program:
 
 ```go
 import(
-    runner "github.com/etf1/kafka-message-scheduler/runner/kafka"
+    runner "github.com/MingyangXiaTim/kafka-scheduler/runner/kafka"
 )
 
 ...
@@ -221,7 +221,7 @@ go run ./cmd/mini
 * docker run :
 
 ```ruby
-docker run etf1/kafka-message-scheduler:mini
+docker run MingyangXiaTim/kafka-scheduler:mini
 ```
 # kubernetes deployment
 
@@ -237,23 +237,23 @@ data:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: kafka-message-scheduler
+  name: kafka-scheduler
   namespace: default
   labels:
-    app: kafka-message-scheduler
+    app: kafka-scheduler
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: kafka-message-scheduler
+      app: kafka-scheduler
   template:
     metadata:
       labels:
-        app: kafka-message-scheduler
+        app: kafka-scheduler
     spec:
       containers:
-      - name: kafka-message-scheduler
-        image: etf1/kafka-message-scheduler:v0.0.6
+      - name: kafka-scheduler
+        image: MingyangXiaTim/kafka-scheduler:v0.0.6
         envFrom:
         - configMapRef:
             name: env-config
@@ -286,23 +286,23 @@ data:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: kafka-message-scheduler
+  name: kafka-scheduler
   namespace: default
   labels:
-    app: kafka-message-scheduler
+    app: kafka-scheduler
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: kafka-message-scheduler
+      app: kafka-scheduler
   template:
     metadata:
       labels:
-        app: kafka-message-scheduler
+        app: kafka-scheduler
     spec:
       containers:
-      - name: kafka-message-scheduler
-        image: etf1/kafka-message-scheduler:v0.0.6
+      - name: kafka-scheduler
+        image: MingyangXiaTim/kafka-scheduler:v0.0.6
         envFrom:
         - configMapRef:
             name: env-config
@@ -321,5 +321,5 @@ spec:
 
 # Admin GUI
 
-![scheduler-admin](https://github.com/etf1/kafka-message-scheduler-admin/blob/main/docs/screenshots/two.png?raw=true)
-An admin GUI is available on another git repository for viewing schedulers info and schedules. For more information: https://github.com/etf1/kafka-message-scheduler-admin
+![scheduler-admin](https://github.com/MingyangXiaTim/kafka-scheduler-admin/blob/main/docs/screenshots/two.png?raw=true)
+An admin GUI is available on another git repository for viewing schedulers info and schedules. For more information: https://github.com/MingyangXiaTim/kafka-scheduler-admin

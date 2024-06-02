@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/etf1/kafka-message-scheduler/config"
-	"github.com/etf1/kafka-message-scheduler/schedule/simple"
+	"github.com/MingyangXiaTim/kafka-scheduler/config"
+	"github.com/MingyangXiaTim/kafka-scheduler/schedule/simple"
 )
 
 // Rule #1: scheduler should have an endpoint for checking it is still alive

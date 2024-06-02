@@ -10,10 +10,10 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
+	"github.com/MingyangXiaTim/kafka-scheduler/schedule"
+	"github.com/MingyangXiaTim/kafka-scheduler/schedule/kafka"
+	"github.com/MingyangXiaTim/kafka-scheduler/scheduler"
 	confluent "github.com/confluentinc/confluent-kafka-go/v2/kafka"
-	"github.com/etf1/kafka-message-scheduler/schedule"
-	"github.com/etf1/kafka-message-scheduler/schedule/kafka"
-	"github.com/etf1/kafka-message-scheduler/scheduler"
 )
 
 const (
@@ -192,7 +192,7 @@ type HandlerOpaque struct {
 }
 
 func (k EventHandler) produceTargetMessage(msg kafka.Schedule) error {
-	headers := []confluent.Header{}
+	var headers []confluent.Header
 
 	if len(msg.Headers) != 0 {
 		headers = append(headers, msg.Headers...)

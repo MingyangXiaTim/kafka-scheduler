@@ -7,12 +7,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/etf1/kafka-message-scheduler/instrument"
-	hmapcoll "github.com/etf1/kafka-message-scheduler/internal/collector/hmap"
-	"github.com/etf1/kafka-message-scheduler/internal/store/hmap"
-	"github.com/etf1/kafka-message-scheduler/schedule"
-	"github.com/etf1/kafka-message-scheduler/schedule/simple"
-	"github.com/etf1/kafka-message-scheduler/scheduler"
+	"github.com/MingyangXiaTim/kafka-scheduler/instrument"
+	hmapcoll "github.com/MingyangXiaTim/kafka-scheduler/internal/collector/hmap"
+	"github.com/MingyangXiaTim/kafka-scheduler/internal/store/hmap"
+	"github.com/MingyangXiaTim/kafka-scheduler/schedule"
+	"github.com/MingyangXiaTim/kafka-scheduler/schedule/simple"
+	"github.com/MingyangXiaTim/kafka-scheduler/scheduler"
 )
 
 var (
@@ -814,7 +814,7 @@ loop:
 	}
 }
 
-// Test issue #8 : https://github.com/etf1/kafka-message-scheduler/issues/8
+// Test issue #8 : https://github.com/MingyangXiaTim/kafka-scheduler/issues/8
 // scheduler deadlock when many schedules with same id and same epoch=now
 func TestScheduler_issue8(t *testing.T) {
 	store := hmap.New()
@@ -860,7 +860,7 @@ loop:
 	}
 }
 
-// Test issue 32: https://github.com/etf1/kafka-message-scheduler/issues/32
+// Test issue 32: https://github.com/MingyangXiaTim/kafka-scheduler/issues/32
 // When scheduler is starting with processing missed events and there is a DeleteByFunc event, the scheduler
 // seems to be in a dead lock situation
 func TestScheduler_issue32(t *testing.T) {

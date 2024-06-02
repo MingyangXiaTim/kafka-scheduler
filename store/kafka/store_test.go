@@ -4,11 +4,11 @@ import (
 	"testing"
 	"time"
 
+	"github.com/MingyangXiaTim/kafka-scheduler/internal/test"
+	"github.com/MingyangXiaTim/kafka-scheduler/schedule"
+	kafka_schedule "github.com/MingyangXiaTim/kafka-scheduler/schedule/kafka"
+	"github.com/MingyangXiaTim/kafka-scheduler/store"
 	confluent "github.com/confluentinc/confluent-kafka-go/v2/kafka"
-	"github.com/etf1/kafka-message-scheduler/internal/test"
-	"github.com/etf1/kafka-message-scheduler/schedule"
-	kafka_schedule "github.com/etf1/kafka-message-scheduler/schedule/kafka"
-	"github.com/etf1/kafka-message-scheduler/store"
 )
 
 var (

@@ -9,12 +9,12 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/etf1/kafka-message-scheduler/apiserver/rest"
-	"github.com/etf1/kafka-message-scheduler/config"
-	"github.com/etf1/kafka-message-scheduler/instrument"
-	"github.com/etf1/kafka-message-scheduler/instrument/prometheus"
-	"github.com/etf1/kafka-message-scheduler/scheduler"
-	"github.com/etf1/kafka-message-scheduler/store/kafka"
+	"github.com/MingyangXiaTim/kafka-scheduler/apiserver/rest"
+	"github.com/MingyangXiaTim/kafka-scheduler/config"
+	"github.com/MingyangXiaTim/kafka-scheduler/instrument"
+	"github.com/MingyangXiaTim/kafka-scheduler/instrument/prometheus"
+	"github.com/MingyangXiaTim/kafka-scheduler/scheduler"
+	"github.com/MingyangXiaTim/kafka-scheduler/store/kafka"
 )
 
 type Config struct {

@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/etf1/kafka-message-scheduler/runner/mini"
+	"github.com/MingyangXiaTim/kafka-scheduler/runner/mini"
 )
 
 // Rule #1: mini runner must expose the api server endpoint /info

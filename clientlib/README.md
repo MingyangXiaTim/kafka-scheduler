@@ -9,7 +9,7 @@ It will not send the message to the scheduler's topic, just preparing the messag
 package main
 
 import(
-    "github.com/etf1/kafka-message-scheduler/clientlib"
+    "github.com/MingyangXiaTim/kafka-scheduler/clientlib"
 )
 
 func main() {
@@ -52,7 +52,7 @@ func main() {
 package main
 
 import(
-    "github.com/etf1/kafka-message-scheduler/clientlib"
+    "github.com/MingyangXiaTim/kafka-scheduler/clientlib"
 )
 
 func main() {
@@ -98,7 +98,7 @@ A custom backoff strategy rule can be applied by using the following full exampl
 package name
 
 import (
-    "github.com/etf1/kafka-message-scheduler/clientlib/retry"
+    "github.com/MingyangXiaTim/kafka-scheduler/clientlib/retry"
 )
 
 func main() {

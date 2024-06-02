@@ -7,15 +7,15 @@ import (
 	"strconv"
 	"time"
 
-	hmapcoll "github.com/etf1/kafka-message-scheduler/internal/collector/hmap"
-	"github.com/etf1/kafka-message-scheduler/internal/test"
-	"github.com/etf1/kafka-message-scheduler/schedule/kafka"
+	hmapcoll "github.com/MingyangXiaTim/kafka-scheduler/internal/collector/hmap"
+	"github.com/MingyangXiaTim/kafka-scheduler/internal/test"
+	"github.com/MingyangXiaTim/kafka-scheduler/schedule/kafka"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/etf1/kafka-message-scheduler/apiserver/rest"
-	"github.com/etf1/kafka-message-scheduler/config"
-	"github.com/etf1/kafka-message-scheduler/internal/store/hmap"
-	"github.com/etf1/kafka-message-scheduler/scheduler"
+	"github.com/MingyangXiaTim/kafka-scheduler/apiserver/rest"
+	"github.com/MingyangXiaTim/kafka-scheduler/config"
+	"github.com/MingyangXiaTim/kafka-scheduler/internal/store/hmap"
+	"github.com/MingyangXiaTim/kafka-scheduler/scheduler"
 )
 
 const (
